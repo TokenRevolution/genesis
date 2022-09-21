@@ -137,7 +137,7 @@ canvas {
   font: 900 11vw Roboto, sans-serif;
   position: relative;
   letter-spacing: 20px;
-  color: var(--primaryColor);
+  color: #e25303;
   user-select: none;
 }
 
