@@ -10,7 +10,7 @@ const configuration = {
     LettersColor: '#e25405',
     LinesColors: ['#FFF', '#008728', '#e25405'],
     LowerLinesColors: ['#3d3d3d'],
-    DotsColor: '#7d7d7d'
+    DotsColor: '#fff'
   }
 }
 ///////////////////////////////
