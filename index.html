@@ -216,7 +216,10 @@
 				<br>
 		<br>
 		<br>
-<p id="demo" style="color: #008728;font-size: 3em;border: 3px solid #e25303;padding: 2em;"></p>
+<p id="days" style="color: #008728;font-size: 3em;border: 3px solid #e25303;padding: 2em;"></p>
+<p id="hours" style="color: #008728;font-size: 3em;border: 3px solid #e25303;padding: 2em;"></p>
+<p id="minutes" style="color: #008728;font-size: 3em;border: 3px solid #e25303;padding: 2em;"></p>
+<p id="seconds" style="color: #008728;font-size: 3em;border: 3px solid #e25303;padding: 2em;"></p>
 
 <script>
 // Set the date we're counting down to
@@ -238,13 +241,18 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("days").innerHTML = days + "d " 
+  document.getElementById("hours").innerHTML = hours + "h "
+  document.getElementById("minutes").innerHTML = minutes + "m " 
+  document.getElementById("seconds").innerHTML = seconds + "s ";
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("days").innerHTML = "EX";
+    document.getElementById("hours").innerHTML = "PI";
+    document.getElementById("minutes").innerHTML = "RE";
+    document.getElementById("seconds").innerHTML = "D";	  
   }
 }, 1000);
 </script>
