@@ -10,6 +10,11 @@
 		<link type="text/css" rel="stylesheet" href="./styles/slider.css"/>
 		<link type="text/css" rel="stylesheet" href="./styles/components.css"/>
     	        <link rel="icon" type="image/png" href="./resources/images/favicon.ico"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+		.mySlides {display:none;}
+		</style>
 	</head>
 	<body>
     <!-- MAIN UI ELEMENTS -->
@@ -212,7 +217,38 @@
             <span class="scroll-letters__letter" title="L">L</span>
             <span class="scroll-letters__letter" title="L">L</span>
           </div>
-        </div> 
+        </div>
+<div class="content-section section--hidden" data-page="8">
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="img_snowtops.jpghttps://www.confindustriamacerata.it/images/amb_trasp.jpg" style="width:100%">
+  <img class="mySlides" src="img_lights.jpg" style="width:100%">
+  <img class="mySlides" src="img_mountains.jpg" style="width:100%">
+  <img class="mySlides" src="img_forest.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	</div>
         <div class="content-section section--hidden" data-page="1">
 		<br>
 		<br>
