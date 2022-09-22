@@ -3,14 +3,14 @@ const configuration = {
   SiteName: 'GENESIS',
   Use2DTextOver3D: false, // Change to true if you want 2D over 3D
   SiteNameSize: 0.7, // Between 0 and +
-  NumberOfVerticalLines: 15,
-  NumberOfDots: 1000,
+  NumberOfVerticalLines: 0,
+  NumberOfDots: 5000,
   colors: {
     CanvasBackgroundColor: '#fff',
     LettersColor: '#e25405',
     LinesColors: ['#FFF', '#008728', '#e25405'],
     LowerLinesColors: ['#3d3d3d'],
-    DotsColor: '#fff'
+    DotsColor: '#008728'
   }
 }
 ///////////////////////////////
