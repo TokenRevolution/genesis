@@ -50,7 +50,7 @@
 
 .button--icon {
   background-color: var(--primaryColor);
-  color: var(--secondaryColor);
+  color: black;
   display: flex;
   align-items: center;
 }
@@ -84,7 +84,7 @@
   display: flex;
   align-items: center;
   border: 2px solid var(--primaryColor);
-  color: var(--secondaryColor);
+  color: black;
 }
 .button--secondary::before {
   content: '';
