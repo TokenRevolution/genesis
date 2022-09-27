@@ -6,7 +6,7 @@ const configuration = {
   NumberOfVerticalLines: 0,
   NumberOfDots: 5000,
   colors: {
-    CanvasBackgroundColor: 'linear-gradient(#e66465, #9198e5)',
+    CanvasBackgroundColor: '#fff',
     LettersColor: '#e25405',
     LinesColors: ['#FFF', '#008728', '#e25405'],
     LowerLinesColors: ['#3d3d3d'],
