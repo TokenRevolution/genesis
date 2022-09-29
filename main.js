@@ -341,9 +341,9 @@ function windowWheelOrTouch (e) {
   setTimeout(() => { timeoutActive = false }, 1500)
 
   if (e.deltaY > 0 || (e.touches && e.touches[0].pageY < touchStartPosition)) {
-    if (sceneMovedAmmount === 7) return
+    if (sceneMovedAmmount === 9) return
     sceneMovedAmmount++
-    sceneMovedAmmount = Math.min(sceneMovedAmmount, 7)
+    sceneMovedAmmount = Math.min(sceneMovedAmmount, 9)
     moveScene()
     ui.ui_moveScene('down')
     return
