@@ -16,6 +16,12 @@
  		<link rel="stylesheet" href="assets/css/style.css">
 		<style>
 			@media only screen and (max-width: 376px) and (min-width: 1px){
+			#mv{
+			 display:none!important;
+			}
+			#mvd{
+				display:none!important;
+			}
 			#nos3{
 			 display:none!important;
 				}
@@ -91,6 +97,12 @@
 			} 
 			}
 			@media only screen and (max-width: 426px) and (min-width: 377px){
+			#mv{
+			display:none!important;
+			}
+			#mvd{
+			display:none!important;
+			}
 			#nos3{
 			display:none!important;
 				}
@@ -168,6 +180,9 @@
 			} 
 			}
 			@media only screen and (max-width: 854px) and (min-width: 427px) {
+				#mv{
+				 display:none!important;
+				}
 				#lims{
 				display:none!important;
 				}
@@ -858,7 +873,7 @@
         <ul class="menu-list">
           <li class="menu-list__item" data-page="1">Slide SHow</li>
           <li class="menu-list__item" data-page="2">Countdown</li>
-          <li class="menu-list__item" data-page="3">Mission and Vision</li>
+          <li id="mv" class="menu-list__item" data-page="3">Mission and Vision</li>
 	  <li id="lims" class="menu-list__item" data-page="8">Mission</li>
 	  <li id="livs" class="menu-list__item" data-page="9">Vision</li>
           <li class="menu-list__item" data-page="4">Goals</li>
@@ -1011,7 +1026,7 @@
         <div class="paging__page" data-page="0"></div>
         <div class="paging__page section--hidden" data-page="1"></div>
         <div class="paging__page section--hidden" data-page="2"></div>
-        <div class="paging__page section--hidden" data-page="3"></div>
+        <div id="mvd" class="paging__page section--hidden" data-page="3"></div>
         <div id="misds" class="paging__page section--hidden" data-page="8"></div>
 	<div id="visds" class="paging__page section--hidden" data-page="9"></div>
 	<div class="paging__page section--hidden" data-page="4"></div>
