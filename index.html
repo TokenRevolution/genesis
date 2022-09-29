@@ -16,6 +16,9 @@
  		<link rel="stylesheet" href="assets/css/style.css">
 		<style>
 			@media only screen and (max-width: 376px) and (min-width: 1px){
+			#nos3{
+			 display:none;
+				}
 			#slide1 {
 			width: 100%;
 			}
@@ -88,6 +91,9 @@
 			} 
 			}
 			@media only screen and (max-width: 426px) and (min-width: 377px){
+			#nos3{
+			display:none;
+				}
 			#slide1 {
 			width: 100%;
 			}
@@ -162,6 +168,24 @@
 			} 
 			}
 			@media only screen and (max-width: 854px) and (min-width: 427px) {
+				#lims{
+				display:none;
+				}
+				#livs{
+				display:none;
+				}
+				#misds{
+				display:none;
+				}
+				#visds{
+				display:none;
+				}
+				#visions{
+				display:none;
+				}
+				#missions{
+				display:none;
+				}
 				#left{
 				width:40%;
 				float:left;
@@ -276,6 +300,24 @@
 			} 
 			}
 			@media only screen and (max-width: 1280px) and (min-width: 855px) {
+				#lims{
+				display:none;
+				}
+				#livs{
+				display:none;
+				}
+				#misds{
+				display:none;
+				}
+				#visds{
+				display:none;
+				}
+				#visions{
+				display:none;
+				}
+				#missions{
+				display:none;
+				}
 				#left{
 				width:40%;
 				float:left;
@@ -391,6 +433,24 @@
 			} 
 			}
 			@media only screen and (max-width: 1920px) and (min-width: 1281px) {
+				#lims{
+				display:none;
+				}
+				#livs{
+				display:none;
+				}
+				#misds{
+				display:none;
+				}
+				#visds{
+				display:none;
+				}
+				#visions{
+				display:none;
+				}
+				#missions{
+				display:none;
+				}
 				#left{
 				width:40%;
 				float:left;
@@ -509,6 +569,24 @@
 			} 
 			}
 			@media only screen and (max-width: 2560px) and (min-width: 1921px) {
+				#lims{
+				display:none;
+				}
+				#livs{
+				display:none;
+				}
+				#misds{
+				display:none;
+				}
+				#visds{
+				display:none;
+				}
+				#visions{
+				display:none;
+				}
+				#missions{
+				display:none;
+				}
 				#left{
 				width:40%;
 				float:left;
@@ -629,6 +707,24 @@
 			} 
 			}
 			@media only screen and (max-width: 3840px) and (min-width: 2561px) {
+				#lims{
+				display:none;
+				}
+				#livs{
+				display:none;
+				}
+				#misds{
+				display:none;
+				}
+				#visds{
+				display:none;
+				}
+				#visions{
+				display:none;
+				}
+				#missions{
+				display:none;
+				}
 				#left{
 				width:40%;
 				float:left;
@@ -763,6 +859,8 @@
           <li class="menu-list__item" data-page="1">Slide SHow</li>
           <li class="menu-list__item" data-page="2">Countdown</li>
           <li class="menu-list__item" data-page="3">Mission and Vision</li>
+	  <li id="lims" class="menu-list__item" data-page="8">Mission</li>
+	  <li id="livs" class="menu-list__item" data-page="9">Vision</li>
           <li class="menu-list__item" data-page="4">Goals</li>
           <li class="menu-list__item" data-page="5">Team</li>
           <li class="menu-list__item" data-page="6">Road Map</li>
@@ -914,10 +1012,13 @@
         <div class="paging__page section--hidden" data-page="1"></div>
         <div class="paging__page section--hidden" data-page="2"></div>
         <div class="paging__page section--hidden" data-page="3"></div>
-        <div class="paging__page section--hidden" data-page="4"></div>
+        <div id="misds" class="paging__page section--hidden" data-page="8"></div>
+	<div id="visds" class="paging__page section--hidden" data-page="9"></div>
+	<div class="paging__page section--hidden" data-page="4"></div>
         <div class="paging__page section--hidden" data-page="5"></div>
 	<div class="paging__page section--hidden" data-page="6"></div>
 	<div class="paging__page section--hidden" data-page="7"></div>
+	
       </div>
       <!-- FOOTER -->
       <div class="fixed-content-footer">
@@ -1035,7 +1136,23 @@ var x = setInterval(function() {
 </script>
 	      </div>
 	   </div>
-	   <div class="content-section section--hidden" data-page="3">
+	   <div id="missions"class="content-section section--hidden" data-page="8">
+          <img id="missioni" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Circle-icons-bike.svg/2048px-Circle-icons-bike.svg.png"/>
+          <h1 id="missiont" class="content-section__title">MISSION</h1>
+          <p id="missionp" class="content-section__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.We are <span class="emphasize">GENESIS</span></p>
+          <button id="missionb" class="content-section__button button button--icon" id="button_video">
+            <span class="button__text" >WATCH VIDEO</span>
+          </button>
+           </div>
+	   <div id="visions"class="content-section section--hidden" data-page="9">
+	   <h1 id="visiont"class="content-section__title">VISION</h1>
+          <p id="visionp" class="content-section__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.We are <span class="emphasize">GENESIS</span></p>
+          <button id="visionb" class="content-section__button button button--icon" id="button_video">
+            <span class="button__text">WHITE PAPER</span>
+          </button>
+	  <img id="visioni" src="https://creazilla-store.fra1.digitaloceanspaces.com/emojis/56973/kick-scooter-emoji-clipart-xl.png"/>
+	    </div>
+	   <div id="nos3" class="content-section section--hidden" data-page="3">
 		 <div id="row" style="width:100%">
 		  <div id="left">
 	  <img id="missioni" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Circle-icons-bike.svg/2048px-Circle-icons-bike.svg.png"/>
