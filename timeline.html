@@ -1,6 +1,12 @@
 <html>
   <head><title>TimeLine</title>
   <style>
+body {
+  font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
 #timeline {
   display: flex;
   background-color: #031625;
@@ -11,6 +17,7 @@
     }
   }
 }
+
 .tl-item {
   transform: translate3d(0, 0, 0);
   position: relative;
@@ -73,7 +80,8 @@
       filter: grayscale(0);
     }
   }
- }
+}
+
 .tl-content {
   transform: translate3d(0, 0, 0) translateY(25px);
   position: relative;
@@ -82,7 +90,7 @@
   margin: 0 1.618em;
   top: 55%;
   opacity: 0;
-    }
+
   h1 {
     font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial,
       sans-serif;
@@ -91,7 +99,7 @@
     font-size: 1.44rem;
     font-weight: normal;
   }
-
+}
 
 .tl-year {
   position: absolute;
@@ -101,14 +109,15 @@
   z-index: 1;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-    }
+
   p {
     font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial,
       sans-serif;
     font-size: 1.728rem;
     line-height: 0;
   }
-   
+}
+
 .tl-bg {
   transform: translate3d(0, 0, 0);
   position: absolute;
@@ -120,7 +129,7 @@
   background-position: center center;
   transition: filter 0.5s ease;
   filter: grayscale(100%);
-}  
+}
   </style>
   </head>
   <body>
