@@ -10,10 +10,14 @@ body {
 #timeline {
   display: flex;
   background-color: #031625;
-    }
-.tl-item :hover {
+
+  :hover {
+    .tl-item {
       width: 23.3333%;
- }
+    }
+  }
+}
+
 .tl-item {
   transform: translate3d(0, 0, 0);
   position: relative;
@@ -23,8 +27,9 @@ body {
   color: #fff;
   overflow: hidden;
   transition: width 0.5s ease;
-  }
-  .tl-item :before{
+
+  :before,
+  :after {
     transform: translate3d(0, 0, 0);
     content: "";
     position: absolute;
@@ -34,13 +39,13 @@ body {
     height: 100%;
   }
 
-  .tl-item:after {
+  :after {
     background: transparentize(#e0251b, 0.15);
     opacity: 1;
     transition: opacity 0.5s ease;
   }
 
-  .tl-item:before {
+  :before {
     background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
@@ -52,20 +57,20 @@ body {
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
 
-  .tl-item:hover {
+  :hover {
     width: 30% !important;
 
-  .tl-item:after {
+    :after {
       opacity: 0;
     }
 
-  .tl-item:before {
+    :before {
       opacity: 1;
       transform: translate3d(0, 0, 0) translateY(0);
       transition: opacity 1s ease, transform 1s ease 0.25s;
-   }
+    }
 
-  .tl-content {
+    .tl-content {
       opacity: 1;
       transform: translateY(0);
       transition: all 0.75s ease 0.5s;
@@ -74,8 +79,8 @@ body {
     .tl-bg {
       filter: grayscale(0);
     }
-  
-
+  }
+}
 
 .tl-content {
   transform: translate3d(0, 0, 0) translateY(25px);
@@ -85,7 +90,7 @@ body {
   margin: 0 1.618em;
   top: 55%;
   opacity: 0;
-  }
+
   h1 {
     font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial,
       sans-serif;
@@ -94,7 +99,7 @@ body {
     font-size: 1.44rem;
     font-weight: normal;
   }
-
+}
 
 .tl-year {
   position: absolute;
@@ -104,14 +109,14 @@ body {
   z-index: 1;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-    }
+
   p {
     font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial,
       sans-serif;
     font-size: 1.728rem;
     line-height: 0;
   }
-
+}
 
 .tl-bg {
   transform: translate3d(0, 0, 0);
