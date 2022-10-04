@@ -58,7 +58,7 @@ ul {
 }
 
 li {
-  color: var(--secondaryColor);
+  color: white;
   font: 600 15px Roboto, sans-serif;
   text-align: left;
 }
