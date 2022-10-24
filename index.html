@@ -129,8 +129,17 @@
 			#Teamdesktopmenu{
 			display:none;
 				}
+			#RoadMapDesktop{
+			display:none;
+				}
+			#RoadMapdesktopmenu{
+			display:none;
+			}
 			}
 			@media only screen and (max-width: 1920px) and (min-width: 1281px) {
+				#RoadMapMobile{
+				Display:none;
+				}
 				#iteamm{
 				display:none;
 				}
@@ -290,7 +299,10 @@
 			    width: 75%;
 			    margin-top: 10%;
 		            background-color: rgb(226 83 3 / 50%);
-			} 
+			}
+			#RoadMapmobilemenu{
+			    display:none;
+				}
 			}
 		</style>
 	</head>
@@ -311,9 +323,10 @@
 	  <li id="livs" class="menu-list__item" data-page="4">Vision</li>
 	  <li id="goalsmobilemenu" class="menu-list__item" data-page="5">Goals</li>
           <li id= "goalsdesktopmenu" class="menu-list__item" data-page="4">Goals</li>
-          <li id="Teammobilemenu" class="menu-list__item" data-page="5">Team</li>
+          <li id="Teammobilemenu" class="menu-list__item" data-page="6">Team</li>
 	  <li id="Teamdesktopmenu" class="menu-list__item" data-page="5">Team</li>
-          <li class="menu-list__item" data-page="6">Road Map</li>
+          <li id="RoadMapmobilemenu"class="menu-list__item" data-page="7">Road Map</li>
+	  <li id="RoadMapdesktopmenu"class="menu-list__item" data-page="6">Road Map</li>
           <li class="menu-list__item" data-page="7">Contact Us</li>
         </ul>
       </div>
@@ -466,8 +479,9 @@
 	<div id="visds" class="paging__page section--hidden" data-page="4"></div>
 	<div id="goalsm" class="paging__page section--hidden" data-page="5"></div>      
 	<div id="teamm"  class="paging__page section--hidden" data-page="6"></div>
-	<div class="paging__page section--hidden" data-page="5"></div>
-        <div class="paging__page section--hidden" data-page="6"></div>
+	<div id="teamd"class="paging__page section--hidden" data-page="5"></div>
+	<div id="RoadMapm" class="paging__page section--hidden" data-page="7"></div>
+        <div id="RoadMapd" class="paging__page section--hidden" data-page="6"></div>
 	<div class="paging__page section--hidden" data-page="7"></div>
 	<div class="paging__page section--hidden" data-page="8"></div>
 	
@@ -725,7 +739,7 @@ var x = setInterval(function() {
           <img id="goalsi2" src="imgg.png"/>
 	  </div>
 	      
-        <div class="content-section section--hidden content-section--left-align" data-page="5">
+        <div id="TeamDesktop" class="content-section section--hidden content-section--left-align" data-page="5">
           <div class="content-holder--left-align">
             <h1 class="content-section__title">MEET THE TEAM</h1>
             <p class="content-section__text text-indent content-section__text-team" style="width: 80%; margin-left: -5%;">Companies can't survive without smart people running them. We have some of the most highly passionate individuals with a vision for your success. Not all heroes wear capes. Check out the people of tomorrow today.</p>
@@ -768,109 +782,16 @@ var x = setInterval(function() {
             </div>
           </div>
         </div>
-	      
-        <div class="content-section section--hidden" data-page="6">
+       <div id="RoadMapMobile" class="content-section section--hidden" data-page="7>
           <h1 id="Roadmapt" class="content-section__title">Road Map</h1>
-		
-  <iframe src="timeline.html" style="height:70%;width:100%" title="TimeLine"></iframe>
-  <section class="cd-timeline js-cd-timeline" style="display: none;">
-    <div class="container max-width-lg cd-timeline__container">
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-picture.svg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 1</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 14</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 2</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
-          
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/cd-icon-picture.svg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 3</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 24</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 4</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 14</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Title of section 5</h2>
-          <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Final Section</h2>
-          <p class="color-contrast-medium">This is the content of the last section</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 26</span>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-    </div>
-  </section> <!-- cd-timeline -->
-  <script src="assets/js/main.js"></script>	
-		
-		
-        </div>
+  		<iframe src="timeline.html" style="height:70%;width:100%" title="TimeLine"></iframe>
+  		<script src="assets/js/main.js"></script>
+       </div>
+       <div id="RoadMapDesktop"class="content-section section--hidden" data-page="6">
+          <h1 id="Roadmapt" class="content-section__title">Road Map</h1>	
+  	  <iframe src="timeline.html" style="height:70%;width:100%" title="TimeLine"></iframe>
+  	  <script src="assets/js/main.js"></script>		
+       </div>
         <div class="content-section section--hidden" data-page="7">
           <h1 class="content-section__title">CONTACT US</h1>
           <p class="content-section__text">We’re here to help and answer any question you might have. We look forward to hearing from you. You can also find us on social media below.</p>
