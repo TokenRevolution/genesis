@@ -126,8 +126,20 @@
 			font-size: 0.6em;
 			width: 100%;
 			} 
+			#Teamdesktopmenu{
+			display:none;
+				}
 			}
 			@media only screen and (max-width: 1920px) and (min-width: 1281px) {
+				#iteamm{
+				display:none;
+				}
+				#teammobile{
+				display:none;
+				}
+				#Teammobilemenu{
+				display:none;
+				}
 				#goalsm{
 				display: none;
 				}
@@ -299,7 +311,8 @@
 	  <li id="livs" class="menu-list__item" data-page="4">Vision</li>
 	  <li id="goalsmobilemenu" class="menu-list__item" data-page="5">Goals</li>
           <li id= "goalsdesktopmenu" class="menu-list__item" data-page="4">Goals</li>
-          <li class="menu-list__item" data-page="5">Team</li>
+          <li id="Teammobilemenu" class="menu-list__item" data-page="5">Team</li>
+	  <li id="Teamdesktopmenu" class="menu-list__item" data-page="5">Team</li>
           <li class="menu-list__item" data-page="6">Road Map</li>
           <li class="menu-list__item" data-page="7">Contact Us</li>
         </ul>
@@ -452,6 +465,7 @@
         <div id="misds" class="paging__page section--hidden" data-page="3"></div>
 	<div id="visds" class="paging__page section--hidden" data-page="4"></div>
 	<div id="goalsm" class="paging__page section--hidden" data-page="5"></div>      
+	<div id="teamm"  class="paging__page section--hidden" data-page="6"></div>
 	<div class="paging__page section--hidden" data-page="5"></div>
         <div class="paging__page section--hidden" data-page="6"></div>
 	<div class="paging__page section--hidden" data-page="7"></div>
@@ -662,8 +676,6 @@ var x = setInterval(function() {
           <button class="content-section__button button button--secondary" id="button_offers">CHECK COMPLETE ROADMAP</button>
           <img id="goalsi2" src="imgg.png"/>
 	  </div>
-	  
-	  #mobile
 	          <div id="goalMobile" class="content-section section--hidden" data-page="5">
 	<img id="goalsi1" src="imggg.png"/>
           <h1 class="content-section__title">GOALS</h1>
@@ -734,6 +746,29 @@ var x = setInterval(function() {
             </div>
           </div>
         </div>
+	  
+	   <div id="TeamMobile" class="content-section section--hidden content-section--left-align" data-page="6">
+          <div class="content-holder--left-align">
+            <h1 class="content-section__title">MEET THE TEAM</h1>
+            <p class="content-section__text text-indent content-section__text-team" style="width: 80%; margin-left: -5%;">Companies can't survive without smart people running them. We have some of the most highly passionate individuals with a vision for your success. Not all heroes wear capes. Check out the people of tomorrow today.</p>
+            <button class="content-section__button button button--secondary" id="button_team">VIEW TEAM</button>
+          </div>
+          <div class="content-section__images">
+            <div class="content-section__image-holder">
+              <img class="content-section__image" src="./resources/images/persons/person1.jpg" alt="Team photo" />
+            </div>
+            <div class="content-section__image-holder">
+              <img class="content-section__image" src="./resources/images/persons/person2.jpg" alt="Team photo" />
+            </div>
+            <div class="content-section__image-holder">
+              <img class="content-section__image" src="./resources/images/persons/person3.jpg" alt="Team photo" />
+            </div>
+            <div class="content-section__image-holder">
+              <img class="content-section__image" src="./resources/images/persons/person4.jpg" alt="Team photo" />
+            </div>
+          </div>
+        </div>
+	      
         <div class="content-section section--hidden" data-page="6">
           <h1 id="Roadmapt" class="content-section__title">Road Map</h1>
 		
@@ -853,7 +888,6 @@ var x = setInterval(function() {
         </div>
       </div>
     </main>
-
     <script type="module" src="./main.js"></script>
 	</body>
 </html>
