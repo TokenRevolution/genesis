@@ -16,6 +16,9 @@
  		<link rel="stylesheet" href="assets/css/style.css">
 		<style>
 			@media only screen and (max-width: 426px) and (min-width: 1px){
+			#Contactusdesktop{
+				Display:none !important;
+				}
 			#Goalsdesktop{
 				Display: none !important;
 				}
@@ -137,6 +140,9 @@
 			}
 			}
 			@media only screen and (max-width: 1920px) and (min-width: 1281px) {
+				#Contactusmobile{
+				Display:none;
+				}
 				#RoadMapMobile{
 				Display:none;
 				}
@@ -792,7 +798,8 @@ var x = setInterval(function() {
   	  <iframe src="timeline.html" style="height:70%;width:100%" title="TimeLine"></iframe>
   	  <script src="assets/js/main.js"></script>		
        </div>
-        <div class="content-section section--hidden" data-page="7">
+					 
+        <div id="Contactusmobile" class="content-section section--hidden" data-page="8">
           <h1 class="content-section__title">CONTACT US</h1>
           <p class="content-section__text">We’re here to help and answer any question you might have. We look forward to hearing from you. You can also find us on social media below.</p>
           <div class="content-section__buttons-holder">
@@ -807,6 +814,26 @@ var x = setInterval(function() {
             </a>
           </div>
         </div>
+	
+					
+					
+	 <div id="Contactusdesktop" class="content-section section--hidden" data-page="7">
+          <h1 class="content-section__title">CONTACT US</h1>
+          <p class="content-section__text">We’re here to help and answer any question you might have. We look forward to hearing from you. You can also find us on social media below.</p>
+          <div class="content-section__buttons-holder">
+            <a class="content-section__button button button--icon" href="mailto:YOUREMAILHERE">
+              <img class="button__image" src="./resources/images/icons/email.svg" alt="Email icon"/>
+              <span class="button__text">EMAIL US</span>
+              <span class="button__invisible-email" >youremail@here.com</span>
+            </a>
+            <a class="content-section__button button button--icon" href="tel:+0011223344">
+              <img class="button__image" src="./resources/images/icons/phone.svg" alt="Phone icon"/>
+              <span class="button__text">CALL US</span>
+            </a>
+          </div>
+        </div>
+					
+					
       </div>
     </main>
     <script type="module" src="./main.js"></script>
