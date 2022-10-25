@@ -8,8 +8,8 @@ const configuration = {
   colors: {
     CanvasBackgroundColor: '#fff',
     LettersColor: '#e25405',
-    LinesColors: ['#FFF', '#008728', '#e25405'],
-    LowerLinesColors: ['#3d3d3d'],
+    LinesColors: ['#2a52be', '#2a52be', '#2a52be'],
+    LowerLinesColors: ['#2a52be'],
     DotsColor: '#008728'
   }
 }
