@@ -6,6 +6,27 @@
          <link rel="stylesheet" href="style.css">
       	<style>
 		@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+#visit-counter{
+  position:absolute;
+  margin-top: 20%;
+  width: 100%;
+  font-weight: bold;
+}
+.website-counter {
+  background-color: #e25303;
+  height: auto;
+  color: white;
+  border: 2px solid green;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -18,6 +39,7 @@ html,body{
   place-items: center;
   background: rgb(255 255 255 / 10%);
   overflow-y:hidden;
+  overflow-x:hidden;
 }
 .circular{
   height: 100px;
@@ -256,7 +278,24 @@ html,body{
             </div>
          </div>
 	</div>    
+	<div id="visit-counter">
+			<div>The Number Of Genesis</div>
+			<div class="website-counter" style="width:10%;margin-left:45%;"></div>
+	</div>
+			<script>
+			var counterContainer = document.querySelector(".website-counter");
+			var visitCount = localStorage.getItem("page_view");
 
+			// Check if page_view entry is present
+			if (visitCount) {
+			  visitCount = Number(visitCount) + 1;
+			  localStorage.setItem("page_view", visitCount);
+			} else {
+			  visitCount = 1;
+			  localStorage.setItem("page_view", 1);
+			}
+			counterContainer.innerHTML = visitCount;
+			</script>
            
                
 <script>
