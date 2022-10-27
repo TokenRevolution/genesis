@@ -111,12 +111,11 @@ html,body{
 }
 .circle .left .progress{
   z-index: 1;
-  animation: left 6000s linear both;
-
+  animation: left 600s linear both;
 }
 @keyframes left {
   100%{
-    transform: rotate(180000deg);
+    transform: rotate(18000deg);
   }
 }
 .circle .right{
@@ -124,12 +123,12 @@ html,body{
   transform: rotate(180deg);
 }
 .circle .right .progress{
-  animation: right 6000s linear both;
+  animation: right 600s linear both;
   animation-delay: 0s;
 }
 @keyframes right {
   100%{
-    transform: rotate(180000deg);
+    transform: rotate(18000deg);
   }
 }
 .circle .dot{
@@ -176,6 +175,8 @@ html,body{
 	  <br>
 	  <br>
 	  <br>
+	  
+	  <div id="scaleCD" style="transform:scale(1.9)">
          <div class="circular" style="margin-left: 31.5%;">
             <div class="inner"></div>
             <div class="outer"></div>
@@ -254,14 +255,9 @@ html,body{
                </div>
             </div>
          </div>
- <div id="countervi" style="width:100%;text-align: center;position: absolute;margin-top: 10%;"> 
-<!-- hitwebcounter Code START -->
-<br>
-<p>The number of Genesis</p>
-<br>
-<a href="https://www.hitwebcounter.com" target="_blank">
-<img src="https://hitwebcounter.com/counter/counter.php?page=8056774&style=0006&nbdigits=9&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>         
- </div>
+	</div>    
+
+           
                
 <script>
 // Set the date we're counting down to
@@ -298,5 +294,6 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
+
     </body>
 </html>
