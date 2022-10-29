@@ -147,7 +147,7 @@ function loadMainLetters () {
   
     for (let i = 0; i < configuration.NumberOfDots; i ++) {
       let x = Math.random() * 200 - 100
-      let y = Math.random() * 200 - 180
+      let y = Math.random() * 200 - 190
       let z = Math.random() * 200 - 100
     
       vertices.push(x, y, z)
