@@ -186,7 +186,12 @@ html,body{
     transform: rotate(270deg);
     z-index: 4;
   }
-}
+} 
+@media only screen and (max-width:450px) and (min-width: 1px) {
+    #scaleCD{
+        margin-left: 36.5%; 
+      }
+    }
   @media only screen and (max-width:450px) and (min-width: 1px) {
     #titl{
         margin-top: -15%;
@@ -215,7 +220,7 @@ html,body{
 	  <br>
 	  
 	  <div id="scaleCD">
-         <div class="circular">
+         <div if="first" class="circular">
             <div class="inner"></div>
             <div class="outer"></div>
             <div class="numb">
