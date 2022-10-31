@@ -329,7 +329,7 @@ iframe {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 0;
+  z-index: 5;
 }
 
 .fixed-content-header__contact {
@@ -394,7 +394,7 @@ iframe {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 0;
+  z-index: 5;
 }
 
 .social-links__anchor {
