@@ -21,8 +21,32 @@
 		html, body, h1, p, div, section, button, #row{
 		      font-family: Audiowide, sans-serif !important;				     
 			}
+@media only screen and (max-width: 375px) and (min-width: 1px){
+	.content-section__image-holder:nth-of-type(1) {
+   		 transform: translate(180%, -100px) !important;
+	}
+	.content-section__image-holder:nth-of-type(2) {
+    	transform: translate(115%, -100px) !important;
+	}
+	.content-section__image-holder:nth-of-type(3) {
+    	transform: translate(40%, -100px) !important;
+	}
+	.content-section__image-holder:nth-of-type(4) {
+    	transform: translate(-40%, -100px) !important;
+	}
+	#meetheteam{
+		font-size: 1em;
+    	margin-bottom: -10%;
+	}
+	#viewteam{
+		margin-left: 28%;
+		text-align: center;
+		margin-top: 10%;
+		margin-bottom: 15%;
+	}
 
-@media only screen and (max-width: 426px) and (min-width: 1px){
+}
+@media only screen and (max-width: 426px) and (min-width: 376px){
 			#missionvisiondesktopmenu{
 			 display:none!important;
 			}
@@ -908,9 +932,9 @@ function showDivs(n) {
 	  <!-- Team per Desktop -->    
           <div id="TeamDesktop" class="content-section section--hidden content-section--left-align" data-page="5">
           <div id="teamcontenitortext"class="content-holder--left-align">
-            <h1 style="margin-top: 10%;"class="content-section__title">MEET THE TEAM</h1>
+            <h1 id="meetheteam" style="margin-top: 10%;"class="content-section__title">MEET THE TEAM</h1>
             <p id="teamtext" class="content-section__text text-indent content-section__text-team">Companies can't survive without smart people running them. We have some of the most highly passionate individuals with a vision for your success. Not all heroes wear capes. Check out the people of tomorrow today.</p>
-            <button class="content-section__button button button--secondary" id="button_team">VIEW TEAM</button>
+            <button id="viewteam" class="content-section__button button button--secondary" id="button_team">VIEW TEAM</button>
           </div>
           <div id="teamimg" class="content-section__images">
             <div class="content-section__image-holder">
